@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Good Health Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+ <script src="script.js"></script>
+</head>
+<body onload="updateNavbar()">
+  <header class="navbar">
+  <div class="logo-section">
+    <img src="images/Good Health Homoeopathy Clinic.jpg" alt="Clinic Logo" class="logo">
+    
+      <img src="images/GitanjaliBhosale.jpeg" alt="Doctor Image" class="doctor-img">
+      <div style="color: #6BAE75; display: flex; flex-direction: column;flex-wrap: wrap;" >
+        <h3>Dr. Geetanjali Umesh Bhosale</h3>
+        <h4>Phone : 9665018391</h4>
+        <h4>Email : geetumesh3@gmail.com</h4>
+      </div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#treatments">Treatment</a></li>
+      <li><a href="#patientReview">Reviews</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="page-container">
+    <div class="overlay">
+      
+        <img src="images/Clinic_Inside.jpeg" style="width: 100%; height: auto;  max-height: 600px;object-fit: cover;display: block;"  alt="">
+      <div class="discover">
+        <!-- <h1>Discover Natural Healing in Clinic.</h1>
+        <p class="speciality">
+          SPECIALITY IN PCOD, Menustrual Irregularities, <br>
+          Thyroid, Harmonal Issues, Paediatic Cases,  <br>
+          Allergies and Asthama, Skin dieseas
+        </p> -->
+        <div class="hero-buttons">
+          <a href="#treatments" class="btn">Explore Treatments</a>
+          <a href="#WhatsApp" class="btn secondary">Schedule Consultation</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!-- <section class="section"> -->
+  <section class="page-container">
+    <div id="treatments">
+    <h1 >Our Treatments</h1>
+    <div id="servicesList" class="card-grid" >
+      <div >
+          <img src="images/Women’s Health Issues.png" >
+      </div>
+       <div >
+            <img src="images/Disease Of Children.png" >
+      </div>
+      <div >
+          <img src="images/Mental Stress Complaints Treatment.png" >
+      </div>
+     </div>
+     <div id="servicesList" class="card-grid" >
+      <div >
+          <img src="images/सर्दी व श्वसनाचे विकार.png" >
+      </div>
+            <div >
+            <img src="images/सर्दी व श्वसनाचे विकार.png" >
+      </div>
+      <div >
+          <img src="images/Skin Diseases त्वचाविकार.png" >
+      </div>
+     </div>
+     <div id="servicesList" class="card-grid" >
+      <div >
+          <img src="images/थायरॉइड,  मधुमेह,  ह्रदयरोग.png" style="width: 40%;" >
+      </div>
+     </div>
+     </div>
+  </section>
+    <!-- <section class="section"> -->
+  <section id="patientReview" class="page-container">
+    <h2 >Patient Reviews</h2>
+    <div class="card-grid">
+      <div class="card">
+        <p>GoodHealth has genuinely transformed my approach to wellness. After struggling with chronic migraines for years, their homeopathic treatments have provided me with relief and a new lease on life. The practitioners are so compassionate and attentive—I couldn’t ask for better care.</p>
+        <h4>Sayali Surve</h4>
+      </div>
+      <div class="card">
+        <p>I was skeptical about homeopathy, but after a year of battling lifestyle diseases, I decided to give GoodHealth a try. I am amazed at how effective their natural remedies have been. My energy levels have improved significantly, and I feel more balanced than ever. Highly recommend!</p>
+        <h4>Vaishali Ghude</h4>
+      </div>
+      <div class="card">
+        <p>The environment at GoodHealth is so serene and welcoming. From my very first appointment, I felt at ease discussing my health concerns. They took the time to understand my situation and offered a tailored approach that really works for me. I’m grateful for their holistic perspective on health.</p>
+        <h4>Mrs. Walavalkar</h4>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+ 
+
+
+<!-- New -->
+ <section id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <div class="info-block">
+        <h4>Address</h4>
+        <p> 247/25, beside Bank of Maharashtra, E Ward, Gumpha, Nagalapark, Kolhapur, Maharashtra 416003</p>
+      </div>
+      <div class="info-block">
+        <h4>Mobile</h4>
+        <p>+91 9665018391</p>
+      </div>
+      <div class="info-block">
+        <h4>Email</h4>
+        <p>geetumesh3@gmail.com</p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="WhatsApp">
+      <input type="text" placeholder="Your Name">
+      <input type="tel" placeholder="Phone Number">
+      <select>
+        <option>Select Appointment Type</option>
+        <option>New Appointment</option>
+        <option>Follow Up</option>
+        <option>Online Consultation</option>
+      </select>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="button" onclick="sendToWhatsApp()">Send Enquiry via WhatsApp</button>
+    </form>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.3323330154226!2d74.23720517519544!3d16.710261784065924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1010018b5eb15%3A0x3dfc118adcc637d7!2sGood%20Health%20Homeopathy%20Clinic!5e0!3m2!1sen!2sin!4v1780134405940!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.3338303708383!2d74.2399018!3d16.710186999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1010018b5eb15%3A0x3dfc118adcc637d7!2sGood%20Health%20Homeopathy%20Clinic!5e0!3m2!1sen!2sin!4v1779985117113!5m2!1sen!2sin" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe> -->
+  <footer>
+    © 2026 Good Health Homeopathy Clinic | Kolhapur
+  </footer>
+</body>
+</html>
