@@ -384,7 +384,11 @@ footer {
     grid-template-columns: 1fr;
     flex-wrap: wrap;
   }
-
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: ;
+  }
   .overlay h1 {
     font-size: 32px;
   }
