@@ -348,7 +348,11 @@ function sendToWhatsApp() {
     const phone = document.querySelector('input[placeholder="Phone Number"]').value;
     const service = document.querySelector('select').value;
     const message = document.querySelector('textarea').value;
-    if(!name||!phone||!service){
+    const isNumeric = /^\d+$/.test(phone);
+    if (!isNumeric){
+      alert("Invalid phone number: contains non-numeric characters");
+    }
+    else if(!name||!phone||!service){
       alert ("No Name or phone or Appointment mention.")
     }
     else{
