@@ -123,6 +123,19 @@ body {
   margin-bottom: 20px;
   color: #224427;
 }
+.social-links-container {
+  display: inline-flex;  /* Keeps the container inline but enables flexbox powers */
+  align-items: center;   /* Perfectly aligns items vertically in the center */
+  gap: 12px;  
+             /* Easily control the spacing between the icons */
+}
+
+/* Optional: Ensure both icons are rendering at a uniform size if they aren't already */
+.social-links-container img {
+  display: block;        /* Removes default inline baseline spacing gaps */
+  height: 22px;          /* Adjust this height to match your design scale */
+  width: auto;           /* Keeps the aspect ratio intact */
+}
 
 .speciality {
   font-size: 18px;
