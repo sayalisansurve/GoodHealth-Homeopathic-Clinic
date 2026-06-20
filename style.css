@@ -24,6 +24,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
+
 .social-links-container {
   display: inline-flex;  /* Keeps the container inline but enables flexbox powers */
   align-items: center;   /* Perfectly aligns items vertically in the center */
