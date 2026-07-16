@@ -311,11 +311,20 @@ button {
  
 }
 footer {
-  background: #6BAE75;
+  background-color: #6BAE75; /* clean white background */
+  display: flex;
+  justify-content: space-between; /* pushes left and right apart */
+  align-items: center;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  border-top: 1px solid #dddddd;
+  /* background: #6BAE75;
   color: #fff;
   text-align: center;
   padding: 18px;
-  margin-top: 20px;
+  margin-top: 20px; */
 }
 
 .form-section {
